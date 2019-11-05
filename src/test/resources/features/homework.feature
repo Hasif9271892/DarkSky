@@ -32,26 +32,11 @@ Feature: Homework
    | email@example..com              |
    | Abc..123@example.com            |
 
-
-
-
-
-
-
-
-
-
-
   @homework-2
   Scenario: Select current month from dropdown
     When I select on birthday dropdown on home screen
     And I click on current month from the dropdown on home screen
     Then I verify october is selected
-
-
-
-
-
 
   @homework-3
  Scenario: verify if month drop down contains duplicate values

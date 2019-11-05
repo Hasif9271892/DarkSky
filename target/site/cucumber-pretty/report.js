@@ -21,7 +21,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 3959266089,
+  "duration": 5022117005,
   "status": "passed"
 });
 formatter.scenario({
@@ -54,28 +54,123 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DarkskySD.goToRegisterPage()"
+  "location": "DarkSkySD.goToRegisterPage()"
 });
 formatter.result({
-  "duration": 1123902976,
+  "duration": 1225052617,
   "status": "passed"
 });
 formatter.match({
-  "location": "DarkskySD.registerButton()"
+  "location": "DarkSkySD.registerButton()"
 });
 formatter.result({
-  "duration": 74804610,
+  "duration": 52171666,
   "status": "passed"
 });
 formatter.match({
-  "location": "DarkskySD.verifyErrorMessage()"
+  "location": "DarkSkySD.verifyErrorMessage()"
 });
 formatter.result({
-  "duration": 81494606,
+  "duration": 60900064,
   "status": "passed"
 });
 formatter.after({
-  "duration": 160246553,
+  "duration": 151819753,
   "status": "passed"
 });
+formatter.before({
+  "duration": 2433912852,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Verify current Temperature should not be greater or less than the Temperature from Daily Timeline",
+  "description": "",
+  "id": "darksky-feature;verify-current-temperature-should-not-be-greater-or-less-than-the-temperature-from-daily-timeline",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 11,
+      "name": "@darksky-2"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "I am on DarkSky home page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 14,
+  "name": "I verify current temperature is not greater or less then temps from daily timeline",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DarkSkySD.iAmOnHomePage()"
+});
+formatter.result({
+  "duration": 18142010,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DarkSkySD.verifyCurrentTempsToHighLow()"
+});
+formatter.result({
+  "duration": 540902144,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 125754542,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 2093116098,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "Verify individual day temp timeline",
+  "description": "",
+  "id": "darksky-feature;verify-individual-day-temp-timeline",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 18,
+      "name": "@darksky-3"
+    }
+  ]
+});
+formatter.step({
+  "line": 20,
+  "name": "I am on DarkSky home page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 21,
+  "name": "I expand today\u0027s timeline",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "I verify lowest and highest temp is displayed correctly",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DarkSkySD.iAmOnHomePage()"
+});
+formatter.result({
+  "duration": 8385915,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DarkSkySD.expandTimeline()"
+});
+formatter.result({
+  "duration": 4068418530,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DarkSkySD.verify()"
 });

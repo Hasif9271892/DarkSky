@@ -2,15 +2,12 @@ package framework.webPages;
 
 import com.google.common.base.Function;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 
-import org.testng.Assert;
 import stepdefinition.SharedSD;
 
-import java.sql.DriverAction;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -87,6 +84,60 @@ public class BasePage {
 
 		return isDropdownDuplicate(Locator);
 
+	}
+
+	public void scrollBar(String y) throws InterruptedException {
+		JavascriptExecutor jsScrollBy = (JavascriptExecutor) SharedSD.getDriver();
+		jsScrollBy.executeScript(y);
+		Thread.sleep(4000);
+	}
+
+	public String replacement(By Locator) {
+		getTextFromElement(Locator).replaceAll("\\D", "");
+		return replacement(Locator);
+	}
+
+	public Boolean isDisplayed(By locator) {
+		return SharedSD.getDriver().findElement(locator).isDisplayed();
+	}
+
+	public void scrollBarScroll(String y) throws InterruptedException {
+		JavascriptExecutor jsScrollBy = (JavascriptExecutor) SharedSD.getDriver();
+		jsScrollBy.executeScript(y);
+		Thread.sleep(4000);
+
+	}
+
+	public boolean isSelected(By locator) {
+		return SharedSD.getDriver().findElement(locator).isSelected();
+
+	}
+
+	public void selectByText(By locator, String value) {
+		WebElement selectText = SharedSD.getDriver().findElement(locator);
+		Select text = new Select(selectText);
+		text.selectByVisibleText(value);
+	}
+
+	public void selectByIndex(By locator, int value) {
+		WebElement selectIndex = SharedSD.getDriver().findElement(locator);
+		Select index = new Select(selectIndex);
+		index.selectByIndex(value);
+
+	}
+
+	public void selectByValue(By locator, String value) {
+		WebElement selectValue = SharedSD.getDriver().findElement(locator);
+		Select value1 = new Select(selectValue);
+		value1.selectByValue(value);
+	}
+
+	public void closePopup() {
+		try {
+			clickOn(By.xpath("//div[@id='managed-overlay']/button[@class='cta widget-overlay-close']"));
+		} catch (TimeoutException e) {
+
+		}
 	}
 }
 

@@ -2,18 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47dd707c-7a46-44ae-a23d-6da3f8cbf704" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/framework/webPages/DarkSkyApiPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/framework/webPages/LandingPageDarkSky.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/framework/webPages/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/DarkSkySD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/darksky.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/homework.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/framework/webPages/HotelsLandingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/framework/webPages/ResultsHotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/HotelsSD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/hotels.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/hotels.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/framework/webPages/HotelsLandingPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/framework/webPages/ResultsHotel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/stepdefinition/HotelsSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/framework/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/framework/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/framework/webPages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/framework/webPages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/framework/webPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/framework/webPages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinition/LoginSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/LoginSD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/framework/webPages/LandingPageDarkSky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/framework/webPages/LandingPageDarkSky.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinition/SharedSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/SharedSD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/darksky.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/darksky.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/homework.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/homework.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/darksky.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/darksky.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/homework.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/homework.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/framework/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/webPages/BasePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/framework/webPages/BasePage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/webPages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/framework/webPages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/webPages/LandingPageDarkSky.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/framework/webPages/LandingPageDarkSky.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinition/DarkSkySD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinition/DarkSkySD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinition/SharedSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinition/SharedSD.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +52,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1SOg16PbbRxZctDySuXxWeint5V" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -54,15 +70,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Verify individual day temp timeline">
-    <configuration name="Feature: darksky" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: Verify today deal price value">
+    <configuration name="Feature: hotels" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/darksky.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/hotels.feature" />
       <option name="GLUE" value="stepdefinition framework" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="com.cucumber.sample" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: darksky" />
+      <option name="SUGGESTED_NAME" value="Feature: hotels" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -73,15 +89,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify current Temperature should not be greater or less than the Temperature from Daily Timeline" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: List of all of hotel within 10 miles radius of airport or downtown" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/darksky.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/hotels.feature" />
       <option name="GLUE" value="stepdefinition framework" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="com.cucumber.sample" />
-      <option name="NAME_FILTER" value="^Verify current Temperature should not be greater or less than the Temperature from Daily Timeline$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify current Temperature should not be greater or less than the Temperature from Daily Timeline$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify current Temperature should not be greater or less than the Temperature from Daily Timeline" />
+      <option name="NAME_FILTER" value="^List of all of hotel within 10 miles radius of airport or downtown$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^List of all of hotel within 10 miles radius of airport or downtown$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: List of all of hotel within 10 miles radius of airport or downtown" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -92,15 +108,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify individual day temp timeline" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: List of all of hotel within 10 miles radius of city center" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/darksky.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/hotels.feature" />
       <option name="GLUE" value="stepdefinition framework" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="com.cucumber.sample" />
-      <option name="NAME_FILTER" value="^Verify individual day temp timeline$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify individual day temp timeline$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify individual day temp timeline" />
+      <option name="NAME_FILTER" value="^List of all of hotel within 10 miles radius of city center$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^List of all of hotel within 10 miles radius of city center$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: List of all of hotel within 10 miles radius of city center" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -111,15 +127,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify on register error" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify today deal price value" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/darksky.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/hotels.feature" />
       <option name="GLUE" value="stepdefinition framework" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="com.cucumber.sample" />
-      <option name="NAME_FILTER" value="^Verify on register error$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify on register error$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify on register error" />
+      <option name="NAME_FILTER" value="^Verify today deal price value$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify today deal price value$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify today deal price value" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -130,15 +146,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify timeline is displayed in correct format" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify user can only view the result by selected property class" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/darksky.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/hotels.feature" />
       <option name="GLUE" value="stepdefinition framework" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="com.cucumber.sample" />
-      <option name="NAME_FILTER" value="^Verify timeline is displayed in correct format$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify timeline is displayed in correct format$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify timeline is displayed in correct format" />
+      <option name="NAME_FILTER" value="^Verify user can only view the result by selected property class$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify user can only view the result by selected property class$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user can only view the result by selected property class" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -150,19 +166,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Feature: darksky" />
-      <item itemvalue="Cucumber java.Scenario: Verify current Temperature should not be greater or less than the Temperature from Daily Timeline" />
-      <item itemvalue="Cucumber java.Scenario: Verify individual day temp timeline" />
-      <item itemvalue="Cucumber java.Scenario: Verify on register error" />
-      <item itemvalue="Cucumber java.Scenario: Verify timeline is displayed in correct format" />
+      <item itemvalue="Cucumber java.Feature: hotels" />
+      <item itemvalue="Cucumber java.Scenario: Verify user can only view the result by selected property class" />
+      <item itemvalue="Cucumber java.Scenario: List of all of hotel within 10 miles radius of airport or downtown" />
+      <item itemvalue="Cucumber java.Scenario: List of all of hotel within 10 miles radius of city center" />
+      <item itemvalue="Cucumber java.Scenario: Verify today deal price value" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Verify individual day temp timeline" />
-        <item itemvalue="Cucumber java.Scenario: Verify current Temperature should not be greater or less than the Temperature from Daily Timeline" />
-        <item itemvalue="Cucumber java.Scenario: Verify timeline is displayed in correct format" />
-        <item itemvalue="Cucumber java.Scenario: Verify on register error" />
-        <item itemvalue="Cucumber java.Feature: darksky" />
+        <item itemvalue="Cucumber java.Scenario: Verify today deal price value" />
+        <item itemvalue="Cucumber java.Scenario: Verify user can only view the result by selected property class" />
+        <item itemvalue="Cucumber java.Scenario: List of all of hotel within 10 miles radius of city center" />
+        <item itemvalue="Cucumber java.Feature: hotels" />
+        <item itemvalue="Cucumber java.Scenario: List of all of hotel within 10 miles radius of airport or downtown" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +207,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/framework/AppiumWrapper.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/com_cucumber_sample$TestRunner.ic" NAME="TestRunner Coverage Results" MODIFIED="1571505923011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

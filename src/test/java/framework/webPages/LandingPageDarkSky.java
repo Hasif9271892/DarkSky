@@ -4,6 +4,7 @@ import stepdefinition.SharedSD;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 public class LandingPageDarkSky extends BasePage {
@@ -19,6 +20,10 @@ public class LandingPageDarkSky extends BasePage {
     private By afterToggleRightNum = By.xpath("//div[@class='dayDetails revealed']//span[@class='lowTemp swap']//span[1]");
     private By hoursOnDarkSky = By.xpath("/html[1]/body[1]/div[4]/div[1]/div[1]/div[3]");
 
+
+
+
+    private By timeLineHour = By.xpath("//div[@id='timeline']//div[@class='hours']//span//span");
 
     //Methods
     public void clickDarkSkyApi() {
@@ -40,21 +45,20 @@ public class LandingPageDarkSky extends BasePage {
 }
 
     public void clickOnToday() throws InterruptedException {
-        JavascriptExecutor jsScrollBy = (JavascriptExecutor) SharedSD.getDriver();
-        jsScrollBy.executeScript("scrollBy(0,900);");
-        Thread.sleep(4000);
+       scrollBar("scrollBy (0,900)");
         clickOn(rangeBar);
     }
 
     public Boolean isDisplayAvailable() {
         Boolean compare = false;
-        String tempMIN = getTextFromElement(tempRangeMin).replaceAll("\\D", "");
+        String tempMIN = replacement(tempRangeMin);
         int tempLOW = Integer.parseInt(tempMIN);
-        String tempMAX = getTextFromElement(tempRangeMax).replaceAll("\\D", "");
+        String tempMAX = replacement(tempRangeMax);
         int tempHIGH = Integer.parseInt(tempMAX);
-        String toggleLowLeft = getTextFromElement(afterToggleLeftNum).replaceAll("\\D", "");
+        String toggleLowLeft = replacement(afterToggleLeftNum);
         int toggleLeft = Integer.parseInt(toggleLowLeft);
-        String toggleRightHigh = getTextFromElement(afterToggleRightNum).replaceAll("\\D", "");
+        String toggleRightHigh = replacement(afterToggleRightNum);
+
         int toggleRight = Integer.parseInt(toggleRightHigh);
         if (!(toggleLeft == tempLOW) || !(toggleRight == tempHIGH)) {
             compare = false;
@@ -79,7 +83,6 @@ public class LandingPageDarkSky extends BasePage {
         }
         String x = (getTextFromElement(hoursOnDarkSky).replaceAll("[Aa-zZ]", "").replace("N", t));
         for (int J = 0; J < hour.size(); J++) {
-            System.out.println(hour.get(J));
             if (x.contains(hour.get(J))) {
                 result = true;
             } else {
@@ -88,4 +91,12 @@ public class LandingPageDarkSky extends BasePage {
         }
         return result;
     }
-}
+
+
+//    public void incrementedTIme(){
+//        List <WebElement> timeIncrement = webAction(timeLineHour).findElements(timeLineHour);
+//
+
+
+    }
+
