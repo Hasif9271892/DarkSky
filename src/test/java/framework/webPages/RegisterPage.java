@@ -16,15 +16,12 @@ public class RegisterPage extends BasePage {
     DarkSkyApiPage darkSkyApiPage = new DarkSkyApiPage();
 
     private By registerButton = By.xpath("//button[contains(text(),'Register')]");
-    //private By signUpButton = By.linkText("Sign Up");
    private By emailField = By.xpath("//input[@placeholder='hacker@example.com']");
-   // private By emailField = By.xpath("/html[1]/body[1]/div[1]/form[1]/div[1]/div[1]/fieldset[1]/div[1]/div[1]/div[1]/input[1]");
 
 
 
     public void clickRegister() {
-
-        clickOn(registerButton);
+     clickOn(registerButton);
 
     }
 
@@ -34,6 +31,7 @@ public class RegisterPage extends BasePage {
         return errorMessage;
 
     }
+}
 
 
 
@@ -44,5 +42,4 @@ public class RegisterPage extends BasePage {
 
 
 
-
-    }
+  
